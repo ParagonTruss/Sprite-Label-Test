@@ -23,14 +23,9 @@
     "nib": "^1.1.0",
     "run-sequence": "^1.2.0",
     "uglifyify": "^3.0.2",
-    "vinyl-source-stream": "^1.1.0",
-    "rc-tree": "1.3.6"
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "es6-promise": "^3.2.1",
-    "lodash": "^4.13.1",
-    "oboe": "^2.1.2",
-    "postal": "^2.0.4",
     "react": "^15.3.1",
     "react-dom": "15.2.0",
     "react-three-renderer": "^2.2.0",
