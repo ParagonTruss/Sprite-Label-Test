@@ -13,7 +13,8 @@ class Simple extends React.Component {
 
     // construct the position vector here, because if we use 'new' within render,
     // React will think that things have changed when they have not.
-    this.cameraPosition = new THREE.Vector3(0, 0, 5);
+    this.cameraPosition = new THREE.Vector3(-30, 20, 80);
+    this.cameraLook = new THREE.Vector3(-30, 20, 0);
   }
   
   componentDidMount() {
@@ -28,7 +29,7 @@ class Simple extends React.Component {
     context.strokeStyle = "rgba(255,0,0,1)";
     context.lineWidth = 4;
 
-    context.fillText( text, 0, 0);
+    context.fillText( text, 0, 18);
 
     var texture = new THREE.Texture(canvas)
     texture.needsUpdate = true;
@@ -58,6 +59,7 @@ class Simple extends React.Component {
           aspect={width / height}
           near={0.1}
           far={1000}
+          lookAt={this.cameraLook}
 
           position={this.cameraPosition}
         />
